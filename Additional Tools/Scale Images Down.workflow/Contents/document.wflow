@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>428</string>
+	<string>492</string>
 	<key>AMApplicationVersion</key>
-	<string>2.7</string>
+	<string>2.10</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -58,7 +58,7 @@
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Ask for Finder Items.action</string>
 				<key>ActionName</key>
-				<string>Solicitar ítems del Finder</string>
+				<string>Ask for Finder Items</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>defaultLocation</key>
@@ -69,19 +69,6 @@
 					<true/>
 					<key>promptMessage</key>
 					<string>Seleccione un ítem del Finder:</string>
-				</dict>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>defaultLocation</key>
-					<string>/Users/JuanGabriel/Desktop</string>
-					<key>granularity</key>
-					<integer>0</integer>
-					<key>multipleSelection</key>
-					<true/>
-					<key>promptMessage</key>
-					<string>Seleccione un ítem del Finder:</string>
-					<key>temporary items path</key>
-					<string>/var/folders/1v/rv62bkhs4rdfsxdkh230tg2w0000gn/T/893AE461-B262-44FE-9F2F-2BB7CD83D685/1/com.apple.Automator.AskForFinderItems</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.AskForFinderItems</string>
@@ -101,13 +88,13 @@
 				<string>97D22B8F-EF42-4484-90D7-3BBE2F0BAF4E</string>
 				<key>Keywords</key>
 				<array>
-					<string>Buscar</string>
-					<string>Ítem</string>
-					<string>Archivo</string>
-					<string>Carpeta</string>
-					<string>Preguntar</string>
-					<string>Seleccionar</string>
-					<string>Mensaje</string>
+					<string>Find</string>
+					<string>Item</string>
+					<string>File</string>
+					<string>Folder</string>
+					<string>Ask</string>
+					<string>Choose</string>
+					<string>Prompt</string>
 				</array>
 				<key>OutputUUID</key>
 				<string>61F996D3-C3AE-4BC0-8BB6-E87AE9A0B15D</string>
@@ -122,9 +109,9 @@
 					<key>0</key>
 					<dict>
 						<key>default value</key>
-						<false/>
+						<integer>0</integer>
 						<key>name</key>
-						<string>multipleSelection</string>
+						<string>granularity</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -135,9 +122,9 @@
 					<key>1</key>
 					<dict>
 						<key>default value</key>
-						<integer>0</integer>
+						<false/>
 						<key>name</key>
-						<string>granularity</string>
+						<string>multipleSelection</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -161,7 +148,7 @@
 					<key>3</key>
 					<dict>
 						<key>default value</key>
-						<string>Selecciona un ítem del Finder:</string>
+						<string>Choose a Finder Item:</string>
 						<key>name</key>
 						<string>promptMessage</string>
 						<key>required</key>
@@ -175,7 +162,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>312.750000:158.000000</string>
+				<string>649.000000:209.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -266,7 +253,7 @@
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action</string>
 				<key>ActionName</key>
-				<string>Renombrar ítems del Finder: Añadir texto</string>
+				<string>Rename Finder Items: Add Text</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>caseIndicator</key>
@@ -314,55 +301,6 @@
 					<key>useLeadingZeros</key>
 					<false/>
 				</dict>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>caseIndicator</key>
-					<integer>0</integer>
-					<key>dateFormat</key>
-					<string>0</string>
-					<key>datePlacement</key>
-					<integer>0</integer>
-					<key>dateSeparator</key>
-					<string>0</string>
-					<key>dateToUse</key>
-					<integer>0</integer>
-					<key>defaultName</key>
-					<string></string>
-					<key>ignoreCase</key>
-					<true/>
-					<key>includeExtensions</key>
-					<integer>0</integer>
-					<key>insertionPosition</key>
-					<integer>0</integer>
-					<key>minimumCount</key>
-					<string>2</string>
-					<key>nameDateSeparator</key>
-					<integer>0</integer>
-					<key>nameSingleItem</key>
-					<string></string>
-					<key>numberLocation</key>
-					<integer>0</integer>
-					<key>numberSeparator</key>
-					<integer>0</integer>
-					<key>renameItems</key>
-					<integer>0</integer>
-					<key>renameType</key>
-					<integer>1</integer>
-					<key>replaceWithText</key>
-					<string></string>
-					<key>singleItemOption</key>
-					<integer>0</integer>
-					<key>startingNumber</key>
-					<integer>1</integer>
-					<key>temporary items path</key>
-					<string>/var/folders/1v/rv62bkhs4rdfsxdkh230tg2w0000gn/T/893AE461-B262-44FE-9F2F-2BB7CD83D685/1/com.apple.Automator.AddNumbersToFinderNames</string>
-					<key>textInput</key>
-					<string>@3x</string>
-					<key>textToFind</key>
-					<string></string>
-					<key>useLeadingZeros</key>
-					<false/>
-				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.AddNumbersToFinderNames</string>
 				<key>CFBundleVersion</key>
@@ -381,22 +319,22 @@
 				<string>1F515B0C-0CB2-47F5-8FBE-1B0AA3AEBE35</string>
 				<key>Keywords</key>
 				<array>
-					<string>Nombre</string>
-					<string>Archivo</string>
-					<string>Carpeta</string>
-					<string>Añadir</string>
-					<string>Número</string>
-					<string>Cambiar</string>
-					<string>Mayúsculas/minúsculas</string>
-					<string>Renombrar</string>
-					<string>Fecha</string>
-					<string>Hora</string>
-					<string>Ajustar</string>
-					<string>Texto</string>
-					<string>Buscar</string>
-					<string>Reemplazar</string>
-					<string>Hacer</string>
-					<string>Secuencial</string>
+					<string>Name</string>
+					<string>File</string>
+					<string>Folder</string>
+					<string>Add</string>
+					<string>Number</string>
+					<string>Change</string>
+					<string>Case</string>
+					<string>Rename</string>
+					<string>Date</string>
+					<string>Time</string>
+					<string>Set</string>
+					<string>Text</string>
+					<string>Find</string>
+					<string>Replace</string>
+					<string>Make</string>
+					<string>Sequential</string>
 				</array>
 				<key>OutputUUID</key>
 				<string>C03EA756-BAA9-418B-87D0-EE1345B1DB42</string>
@@ -698,7 +636,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>312.750000:319.000000</string>
+				<string>649.000000:369.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -741,16 +679,11 @@
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Duplicate Finder Items.action</string>
 				<key>ActionName</key>
-				<string>Duplicar ítems del Finder</string>
+				<string>Duplicate Finder Items</string>
 				<key>ActionParameters</key>
 				<dict/>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>temporary items path</key>
-					<string>/var/folders/1v/rv62bkhs4rdfsxdkh230tg2w0000gn/T/893AE461-B262-44FE-9F2F-2BB7CD83D685/1/com.apple.Automator.Duplicate_Finder_Items</string>
-				</dict>
 				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.Duplicate_Finder_Items</string>
+				<string>com.apple.Automator.DuplicateFinderItems</string>
 				<key>CFBundleVersion</key>
 				<string>1.1.1</string>
 				<key>CanShowSelectedItemsWhenRun</key>
@@ -872,7 +805,7 @@
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action</string>
 				<key>ActionName</key>
-				<string>Renombrar ítems del Finder: Reemplazar texto</string>
+				<string>Rename Finder Items: Replace Text</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>caseIndicator</key>
@@ -920,55 +853,6 @@
 					<key>useLeadingZeros</key>
 					<false/>
 				</dict>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>caseIndicator</key>
-					<integer>0</integer>
-					<key>dateFormat</key>
-					<string>0</string>
-					<key>datePlacement</key>
-					<integer>0</integer>
-					<key>dateSeparator</key>
-					<string>0</string>
-					<key>dateToUse</key>
-					<integer>0</integer>
-					<key>defaultName</key>
-					<string></string>
-					<key>ignoreCase</key>
-					<true/>
-					<key>includeExtensions</key>
-					<integer>1</integer>
-					<key>insertionPosition</key>
-					<integer>0</integer>
-					<key>minimumCount</key>
-					<string>2</string>
-					<key>nameDateSeparator</key>
-					<integer>0</integer>
-					<key>nameSingleItem</key>
-					<string></string>
-					<key>numberLocation</key>
-					<integer>0</integer>
-					<key>numberSeparator</key>
-					<integer>0</integer>
-					<key>renameItems</key>
-					<integer>0</integer>
-					<key>renameType</key>
-					<integer>4</integer>
-					<key>replaceWithText</key>
-					<string>@2x</string>
-					<key>singleItemOption</key>
-					<integer>0</integer>
-					<key>startingNumber</key>
-					<integer>1</integer>
-					<key>temporary items path</key>
-					<string>/var/folders/1v/rv62bkhs4rdfsxdkh230tg2w0000gn/T/893AE461-B262-44FE-9F2F-2BB7CD83D685/1/com.apple.Automator.AddNumbersToFinderNames</string>
-					<key>textInput</key>
-					<string></string>
-					<key>textToFind</key>
-					<string>@3x</string>
-					<key>useLeadingZeros</key>
-					<false/>
-				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.AddNumbersToFinderNames</string>
 				<key>CFBundleVersion</key>
@@ -987,22 +871,22 @@
 				<string>7A669CE9-D366-46A6-8E43-2B2977DACB1C</string>
 				<key>Keywords</key>
 				<array>
-					<string>Nombre</string>
-					<string>Archivo</string>
-					<string>Carpeta</string>
-					<string>Añadir</string>
-					<string>Número</string>
-					<string>Cambiar</string>
-					<string>Mayúsculas/minúsculas</string>
-					<string>Renombrar</string>
-					<string>Fecha</string>
-					<string>Hora</string>
-					<string>Ajustar</string>
-					<string>Texto</string>
-					<string>Buscar</string>
-					<string>Reemplazar</string>
-					<string>Hacer</string>
-					<string>Secuencial</string>
+					<string>Name</string>
+					<string>File</string>
+					<string>Folder</string>
+					<string>Add</string>
+					<string>Number</string>
+					<string>Change</string>
+					<string>Case</string>
+					<string>Rename</string>
+					<string>Date</string>
+					<string>Time</string>
+					<string>Set</string>
+					<string>Text</string>
+					<string>Find</string>
+					<string>Replace</string>
+					<string>Make</string>
+					<string>Sequential</string>
 				</array>
 				<key>OutputUUID</key>
 				<string>296B0FEC-EBBC-44D1-8600-6D1DA329FE70</string>
@@ -1304,7 +1188,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>312.750000:573.000000</string>
+				<string>649.000000:621.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1377,7 +1261,7 @@
 					<dict>
 						<key>tokenizedValue</key>
 						<array>
-							<string> copia</string>
+							<string> copy</string>
 						</array>
 					</dict>
 					<key>useLeadingZeros</key>
@@ -1395,7 +1279,7 @@
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action</string>
 				<key>ActionName</key>
-				<string>Renombrar ítems del Finder: Reemplazar texto</string>
+				<string>Rename Finder Items: Replace Text</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>caseIndicator</key>
@@ -1439,56 +1323,7 @@
 					<key>textInput</key>
 					<string></string>
 					<key>textToFind</key>
-					<string> copia</string>
-					<key>useLeadingZeros</key>
-					<false/>
-				</dict>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>caseIndicator</key>
-					<integer>0</integer>
-					<key>dateFormat</key>
-					<string>0</string>
-					<key>datePlacement</key>
-					<integer>0</integer>
-					<key>dateSeparator</key>
-					<string>0</string>
-					<key>dateToUse</key>
-					<integer>0</integer>
-					<key>defaultName</key>
-					<string></string>
-					<key>ignoreCase</key>
-					<true/>
-					<key>includeExtensions</key>
-					<integer>1</integer>
-					<key>insertionPosition</key>
-					<integer>0</integer>
-					<key>minimumCount</key>
-					<string>2</string>
-					<key>nameDateSeparator</key>
-					<integer>0</integer>
-					<key>nameSingleItem</key>
-					<string></string>
-					<key>numberLocation</key>
-					<integer>0</integer>
-					<key>numberSeparator</key>
-					<integer>0</integer>
-					<key>renameItems</key>
-					<integer>0</integer>
-					<key>renameType</key>
-					<integer>4</integer>
-					<key>replaceWithText</key>
-					<string></string>
-					<key>singleItemOption</key>
-					<integer>0</integer>
-					<key>startingNumber</key>
-					<integer>1</integer>
-					<key>temporary items path</key>
-					<string>/var/folders/1v/rv62bkhs4rdfsxdkh230tg2w0000gn/T/893AE461-B262-44FE-9F2F-2BB7CD83D685/1/com.apple.Automator.AddNumbersToFinderNames</string>
-					<key>textInput</key>
-					<string></string>
-					<key>textToFind</key>
-					<string> copia</string>
+					<string> copy</string>
 					<key>useLeadingZeros</key>
 					<false/>
 				</dict>
@@ -1510,22 +1345,22 @@
 				<string>D4832325-466F-4B2E-A747-2DE32529F4B3</string>
 				<key>Keywords</key>
 				<array>
-					<string>Nombre</string>
-					<string>Archivo</string>
-					<string>Carpeta</string>
-					<string>Añadir</string>
-					<string>Número</string>
-					<string>Cambiar</string>
-					<string>Mayúsculas/minúsculas</string>
-					<string>Renombrar</string>
-					<string>Fecha</string>
-					<string>Hora</string>
-					<string>Ajustar</string>
-					<string>Texto</string>
-					<string>Buscar</string>
-					<string>Reemplazar</string>
-					<string>Hacer</string>
-					<string>Secuencial</string>
+					<string>Name</string>
+					<string>File</string>
+					<string>Folder</string>
+					<string>Add</string>
+					<string>Number</string>
+					<string>Change</string>
+					<string>Case</string>
+					<string>Rename</string>
+					<string>Date</string>
+					<string>Time</string>
+					<string>Set</string>
+					<string>Text</string>
+					<string>Find</string>
+					<string>Replace</string>
+					<string>Make</string>
+					<string>Sequential</string>
 				</array>
 				<key>OutputUUID</key>
 				<string>87BBC173-CE47-43C1-8FC1-7B6576025B6A</string>
@@ -1827,7 +1662,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>312.750000:761.000000</string>
+				<string>649.000000:808.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1845,14 +1680,14 @@
 					<false/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.cocoa.path</string>
+						<string>public.image</string>
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
 				<string>1.3.1</string>
 				<key>AMApplication</key>
 				<array>
-					<string>Previsualización</string>
+					<string>Preview</string>
 				</array>
 				<key>AMParameterProperties</key>
 				<dict>
@@ -1871,13 +1706,13 @@
 					<string>List</string>
 					<key>Types</key>
 					<array>
-						<string>com.apple.cocoa.path</string>
+						<string>public.image</string>
 					</array>
 				</dict>
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Scale Images.action</string>
 				<key>ActionName</key>
-				<string>Ajustar tamaño de las imágenes</string>
+				<string>Scale Images</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>percentageValue</key>
@@ -1888,19 +1723,6 @@
 					<integer>0</integer>
 					<key>sizeValue</key>
 					<integer>480</integer>
-				</dict>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>percentageValue</key>
-					<integer>67</integer>
-					<key>scaleMethod</key>
-					<integer>1</integer>
-					<key>scaleValue</key>
-					<integer>0</integer>
-					<key>sizeValue</key>
-					<integer>480</integer>
-					<key>temporary items path</key>
-					<string>/var/folders/1v/rv62bkhs4rdfsxdkh230tg2w0000gn/T/893AE461-B262-44FE-9F2F-2BB7CD83D685/1/com.apple.Automator.ScaleImage</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.ScaleImage</string>
@@ -1920,10 +1742,10 @@
 				<string>15F47079-2B12-480C-80CB-33F2C7B89646</string>
 				<key>Keywords</key>
 				<array>
-					<string>Imagen</string>
-					<string>Foto</string>
-					<string>Escala</string>
-					<string>Cambiar</string>
+					<string>Image</string>
+					<string>Photo</string>
+					<string>Scale</string>
+					<string>Change</string>
 				</array>
 				<key>OutputUUID</key>
 				<string>91BB118E-7E74-4C4C-8AEE-3A4C95A6989B</string>
@@ -1991,7 +1813,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>312.750000:866.000000</string>
+				<string>649.000000:912.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Scale Images.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -2034,16 +1856,11 @@
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Duplicate Finder Items.action</string>
 				<key>ActionName</key>
-				<string>Duplicar ítems del Finder</string>
+				<string>Duplicate Finder Items</string>
 				<key>ActionParameters</key>
 				<dict/>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>temporary items path</key>
-					<string>/var/folders/1v/rv62bkhs4rdfsxdkh230tg2w0000gn/T/893AE461-B262-44FE-9F2F-2BB7CD83D685/1/com.apple.Automator.Duplicate_Finder_Items</string>
-				</dict>
 				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.Duplicate_Finder_Items</string>
+				<string>com.apple.Automator.DuplicateFinderItems</string>
 				<key>CFBundleVersion</key>
 				<string>1.1.1</string>
 				<key>CanShowSelectedItemsWhenRun</key>
@@ -2163,7 +1980,7 @@
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action</string>
 				<key>ActionName</key>
-				<string>Renombrar ítems del Finder: Reemplazar texto</string>
+				<string>Rename Finder Items: Replace Text</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>caseIndicator</key>
@@ -2211,55 +2028,6 @@
 					<key>useLeadingZeros</key>
 					<false/>
 				</dict>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>caseIndicator</key>
-					<integer>0</integer>
-					<key>dateFormat</key>
-					<string>0</string>
-					<key>datePlacement</key>
-					<integer>0</integer>
-					<key>dateSeparator</key>
-					<string>0</string>
-					<key>dateToUse</key>
-					<integer>0</integer>
-					<key>defaultName</key>
-					<string></string>
-					<key>ignoreCase</key>
-					<true/>
-					<key>includeExtensions</key>
-					<integer>1</integer>
-					<key>insertionPosition</key>
-					<integer>0</integer>
-					<key>minimumCount</key>
-					<string>2</string>
-					<key>nameDateSeparator</key>
-					<integer>0</integer>
-					<key>nameSingleItem</key>
-					<string></string>
-					<key>numberLocation</key>
-					<integer>0</integer>
-					<key>numberSeparator</key>
-					<integer>0</integer>
-					<key>renameItems</key>
-					<integer>0</integer>
-					<key>renameType</key>
-					<integer>4</integer>
-					<key>replaceWithText</key>
-					<string></string>
-					<key>singleItemOption</key>
-					<integer>0</integer>
-					<key>startingNumber</key>
-					<integer>1</integer>
-					<key>temporary items path</key>
-					<string>/var/folders/1v/rv62bkhs4rdfsxdkh230tg2w0000gn/T/893AE461-B262-44FE-9F2F-2BB7CD83D685/1/com.apple.Automator.AddNumbersToFinderNames</string>
-					<key>textInput</key>
-					<string></string>
-					<key>textToFind</key>
-					<string>@2x</string>
-					<key>useLeadingZeros</key>
-					<false/>
-				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.AddNumbersToFinderNames</string>
 				<key>CFBundleVersion</key>
@@ -2278,22 +2046,22 @@
 				<string>FECFDF9D-E811-4E77-A9F4-6E249054A5B0</string>
 				<key>Keywords</key>
 				<array>
-					<string>Nombre</string>
-					<string>Archivo</string>
-					<string>Carpeta</string>
-					<string>Añadir</string>
-					<string>Número</string>
-					<string>Cambiar</string>
-					<string>Mayúsculas/minúsculas</string>
-					<string>Renombrar</string>
-					<string>Fecha</string>
-					<string>Hora</string>
-					<string>Ajustar</string>
-					<string>Texto</string>
-					<string>Buscar</string>
-					<string>Reemplazar</string>
-					<string>Hacer</string>
-					<string>Secuencial</string>
+					<string>Name</string>
+					<string>File</string>
+					<string>Folder</string>
+					<string>Add</string>
+					<string>Number</string>
+					<string>Change</string>
+					<string>Case</string>
+					<string>Rename</string>
+					<string>Date</string>
+					<string>Time</string>
+					<string>Set</string>
+					<string>Text</string>
+					<string>Find</string>
+					<string>Replace</string>
+					<string>Make</string>
+					<string>Sequential</string>
 				</array>
 				<key>OutputUUID</key>
 				<string>5FA1ADC7-5D50-460F-B101-D51BCE2F37B6</string>
@@ -2595,7 +2363,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>312.750000:1120.000000</string>
+				<string>649.000000:1164.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -2668,7 +2436,7 @@
 					<dict>
 						<key>tokenizedValue</key>
 						<array>
-							<string> copia</string>
+							<string> copy</string>
 						</array>
 					</dict>
 					<key>useLeadingZeros</key>
@@ -2686,7 +2454,7 @@
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action</string>
 				<key>ActionName</key>
-				<string>Renombrar ítems del Finder: Reemplazar texto</string>
+				<string>Rename Finder Items: Replace Text</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>caseIndicator</key>
@@ -2730,56 +2498,7 @@
 					<key>textInput</key>
 					<string></string>
 					<key>textToFind</key>
-					<string> copia</string>
-					<key>useLeadingZeros</key>
-					<false/>
-				</dict>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>caseIndicator</key>
-					<integer>0</integer>
-					<key>dateFormat</key>
-					<string>0</string>
-					<key>datePlacement</key>
-					<integer>0</integer>
-					<key>dateSeparator</key>
-					<string>0</string>
-					<key>dateToUse</key>
-					<integer>0</integer>
-					<key>defaultName</key>
-					<string></string>
-					<key>ignoreCase</key>
-					<true/>
-					<key>includeExtensions</key>
-					<integer>1</integer>
-					<key>insertionPosition</key>
-					<integer>0</integer>
-					<key>minimumCount</key>
-					<string>2</string>
-					<key>nameDateSeparator</key>
-					<integer>0</integer>
-					<key>nameSingleItem</key>
-					<string></string>
-					<key>numberLocation</key>
-					<integer>0</integer>
-					<key>numberSeparator</key>
-					<integer>0</integer>
-					<key>renameItems</key>
-					<integer>0</integer>
-					<key>renameType</key>
-					<integer>4</integer>
-					<key>replaceWithText</key>
-					<string></string>
-					<key>singleItemOption</key>
-					<integer>0</integer>
-					<key>startingNumber</key>
-					<integer>1</integer>
-					<key>temporary items path</key>
-					<string>/var/folders/1v/rv62bkhs4rdfsxdkh230tg2w0000gn/T/893AE461-B262-44FE-9F2F-2BB7CD83D685/1/com.apple.Automator.AddNumbersToFinderNames</string>
-					<key>textInput</key>
-					<string></string>
-					<key>textToFind</key>
-					<string> copia</string>
+					<string> copy</string>
 					<key>useLeadingZeros</key>
 					<false/>
 				</dict>
@@ -2801,22 +2520,22 @@
 				<string>433A1EF1-C568-478E-9FE3-F90DE2498CB6</string>
 				<key>Keywords</key>
 				<array>
-					<string>Nombre</string>
-					<string>Archivo</string>
-					<string>Carpeta</string>
-					<string>Añadir</string>
-					<string>Número</string>
-					<string>Cambiar</string>
-					<string>Mayúsculas/minúsculas</string>
-					<string>Renombrar</string>
-					<string>Fecha</string>
-					<string>Hora</string>
-					<string>Ajustar</string>
-					<string>Texto</string>
-					<string>Buscar</string>
-					<string>Reemplazar</string>
-					<string>Hacer</string>
-					<string>Secuencial</string>
+					<string>Name</string>
+					<string>File</string>
+					<string>Folder</string>
+					<string>Add</string>
+					<string>Number</string>
+					<string>Change</string>
+					<string>Case</string>
+					<string>Rename</string>
+					<string>Date</string>
+					<string>Time</string>
+					<string>Set</string>
+					<string>Text</string>
+					<string>Find</string>
+					<string>Replace</string>
+					<string>Make</string>
+					<string>Sequential</string>
 				</array>
 				<key>OutputUUID</key>
 				<string>3F06F613-4FC3-489C-8D85-ECEF6E12046C</string>
@@ -3118,7 +2837,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>312.750000:1308.000000</string>
+				<string>649.000000:1351.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -3136,14 +2855,14 @@
 					<false/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.cocoa.path</string>
+						<string>public.image</string>
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
 				<string>1.3.1</string>
 				<key>AMApplication</key>
 				<array>
-					<string>Previsualización</string>
+					<string>Preview</string>
 				</array>
 				<key>AMParameterProperties</key>
 				<dict>
@@ -3162,13 +2881,13 @@
 					<string>List</string>
 					<key>Types</key>
 					<array>
-						<string>com.apple.cocoa.path</string>
+						<string>public.image</string>
 					</array>
 				</dict>
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Scale Images.action</string>
 				<key>ActionName</key>
-				<string>Ajustar tamaño de las imágenes</string>
+				<string>Scale Images</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>percentageValue</key>
@@ -3179,19 +2898,6 @@
 					<integer>0</integer>
 					<key>sizeValue</key>
 					<integer>480</integer>
-				</dict>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>percentageValue</key>
-					<integer>50</integer>
-					<key>scaleMethod</key>
-					<integer>1</integer>
-					<key>scaleValue</key>
-					<integer>0</integer>
-					<key>sizeValue</key>
-					<integer>480</integer>
-					<key>temporary items path</key>
-					<string>/var/folders/1v/rv62bkhs4rdfsxdkh230tg2w0000gn/T/893AE461-B262-44FE-9F2F-2BB7CD83D685/1/com.apple.Automator.ScaleImage</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.ScaleImage</string>
@@ -3211,10 +2917,10 @@
 				<string>5B55282C-9773-477E-ABF2-8ADE1FF62A9B</string>
 				<key>Keywords</key>
 				<array>
-					<string>Imagen</string>
-					<string>Foto</string>
-					<string>Escala</string>
-					<string>Cambiar</string>
+					<string>Image</string>
+					<string>Photo</string>
+					<string>Scale</string>
+					<string>Change</string>
 				</array>
 				<key>OutputUUID</key>
 				<string>C9A1C6F9-9D1B-4FDA-BCCA-3CB7DE5ACF05</string>
@@ -3282,7 +2988,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>312.750000:1413.000000</string>
+				<string>649.000000:1455.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Scale Images.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -3292,68 +2998,68 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>0B007C8C-7541-45D5-A69C-C020F4550BEB</key>
+		<key>1685AC78-7D6A-4973-AFB9-F3B1833A423B</key>
+		<dict>
+			<key>from</key>
+			<string>A5E1EF89-4DD8-4FFE-BC7C-00267802CA3C - A5E1EF89-4DD8-4FFE-BC7C-00267802CA3C</string>
+			<key>to</key>
+			<string>CDDFDE4D-6B91-4313-AFC9-5C3445DD68E1 - CDDFDE4D-6B91-4313-AFC9-5C3445DD68E1</string>
+		</dict>
+		<key>314DC6C3-A6C4-4E7C-B742-4DFBB74053AD</key>
 		<dict>
 			<key>from</key>
 			<string>CDDFDE4D-6B91-4313-AFC9-5C3445DD68E1 - CDDFDE4D-6B91-4313-AFC9-5C3445DD68E1</string>
 			<key>to</key>
 			<string>71ADFC94-EF60-4FD0-86E1-EF35631EFCFF - 71ADFC94-EF60-4FD0-86E1-EF35631EFCFF</string>
 		</dict>
-		<key>0C7C3400-92BE-470F-88E1-412595EBBEB0</key>
+		<key>88DBA1E8-0F29-43AC-9D19-530AA1F565D1</key>
+		<dict>
+			<key>from</key>
+			<string>BE6F5A94-FA91-4430-9B8D-C370229E5FB5 - BE6F5A94-FA91-4430-9B8D-C370229E5FB5</string>
+			<key>to</key>
+			<string>1F9B849F-1B72-4109-A837-3F4A99AE49AF - 1F9B849F-1B72-4109-A837-3F4A99AE49AF</string>
+		</dict>
+		<key>99018B1A-AEBD-4C36-89D3-77E083FE4E1D</key>
 		<dict>
 			<key>from</key>
 			<string>F49D3D43-3C2A-41DD-AC93-D3665BFB3799 - F49D3D43-3C2A-41DD-AC93-D3665BFB3799</string>
 			<key>to</key>
 			<string>98A2F61B-8F03-4C80-AE31-B7EABC954F65 - 98A2F61B-8F03-4C80-AE31-B7EABC954F65</string>
 		</dict>
-		<key>2D86AEDA-60E4-4050-BF29-0495AE89E1D3</key>
+		<key>BEAA391A-CACD-477C-9423-78E62B2ADB1C</key>
 		<dict>
 			<key>from</key>
-			<string>A5E1EF89-4DD8-4FFE-BC7C-00267802CA3C - A5E1EF89-4DD8-4FFE-BC7C-00267802CA3C</string>
-			<key>to</key>
-			<string>CDDFDE4D-6B91-4313-AFC9-5C3445DD68E1 - CDDFDE4D-6B91-4313-AFC9-5C3445DD68E1</string>
-		</dict>
-		<key>6EEB9DFB-2932-4717-BE25-8C7825876804</key>
-		<dict>
-			<key>from</key>
-			<string>1F9B849F-1B72-4109-A837-3F4A99AE49AF - 1F9B849F-1B72-4109-A837-3F4A99AE49AF</string>
-			<key>to</key>
-			<string>CD059851-6A9A-48F4-88E2-1210F7EA72C5 - CD059851-6A9A-48F4-88E2-1210F7EA72C5</string>
-		</dict>
-		<key>7D783ED5-809C-4A76-9435-4CB7ACFB4516</key>
-		<dict>
-			<key>from</key>
-			<string>BE6F5A94-FA91-4430-9B8D-C370229E5FB5 - BE6F5A94-FA91-4430-9B8D-C370229E5FB5</string>
-			<key>to</key>
-			<string>1F9B849F-1B72-4109-A837-3F4A99AE49AF - 1F9B849F-1B72-4109-A837-3F4A99AE49AF</string>
-		</dict>
-		<key>86B27752-86E2-4ADC-850D-3EE8996DC4B3</key>
-		<dict>
-			<key>from</key>
-			<string>CD059851-6A9A-48F4-88E2-1210F7EA72C5 - CD059851-6A9A-48F4-88E2-1210F7EA72C5</string>
-			<key>to</key>
-			<string>14A1306A-549C-456E-A79E-5E06D733C2C8 - 14A1306A-549C-456E-A79E-5E06D733C2C8</string>
-		</dict>
-		<key>A8094F2E-91FC-4186-AC6A-5D1E23D52016</key>
-		<dict>
-			<key>from</key>
-			<string>14A1306A-549C-456E-A79E-5E06D733C2C8 - 14A1306A-549C-456E-A79E-5E06D733C2C8</string>
-			<key>to</key>
 			<string>1FE25963-7E06-4FCD-B2FA-914878CDC011 - 1FE25963-7E06-4FCD-B2FA-914878CDC011</string>
+			<key>to</key>
+			<string>A5E1EF89-4DD8-4FFE-BC7C-00267802CA3C - A5E1EF89-4DD8-4FFE-BC7C-00267802CA3C</string>
 		</dict>
-		<key>ACF13D82-EC28-4E5A-A3D2-C0DC0A25E4D2</key>
+		<key>C0F79105-A42C-4749-AC3E-82274ECCA533</key>
 		<dict>
 			<key>from</key>
 			<string>98A2F61B-8F03-4C80-AE31-B7EABC954F65 - 98A2F61B-8F03-4C80-AE31-B7EABC954F65</string>
 			<key>to</key>
 			<string>BE6F5A94-FA91-4430-9B8D-C370229E5FB5 - BE6F5A94-FA91-4430-9B8D-C370229E5FB5</string>
 		</dict>
-		<key>B661461C-87EF-4AA0-AB10-431CC2AF25A6</key>
+		<key>CAB254EE-2104-4BEE-A145-B0DB43211F77</key>
 		<dict>
 			<key>from</key>
-			<string>1FE25963-7E06-4FCD-B2FA-914878CDC011 - 1FE25963-7E06-4FCD-B2FA-914878CDC011</string>
+			<string>CD059851-6A9A-48F4-88E2-1210F7EA72C5 - CD059851-6A9A-48F4-88E2-1210F7EA72C5</string>
 			<key>to</key>
-			<string>A5E1EF89-4DD8-4FFE-BC7C-00267802CA3C - A5E1EF89-4DD8-4FFE-BC7C-00267802CA3C</string>
+			<string>14A1306A-549C-456E-A79E-5E06D733C2C8 - 14A1306A-549C-456E-A79E-5E06D733C2C8</string>
+		</dict>
+		<key>D48344E5-7844-49D7-8B99-CEE9FB52FA17</key>
+		<dict>
+			<key>from</key>
+			<string>1F9B849F-1B72-4109-A837-3F4A99AE49AF - 1F9B849F-1B72-4109-A837-3F4A99AE49AF</string>
+			<key>to</key>
+			<string>CD059851-6A9A-48F4-88E2-1210F7EA72C5 - CD059851-6A9A-48F4-88E2-1210F7EA72C5</string>
+		</dict>
+		<key>F754F06E-D043-4E74-B75A-389E537D7C05</key>
+		<dict>
+			<key>from</key>
+			<string>14A1306A-549C-456E-A79E-5E06D733C2C8 - 14A1306A-549C-456E-A79E-5E06D733C2C8</string>
+			<key>to</key>
+			<string>1FE25963-7E06-4FCD-B2FA-914878CDC011 - 1FE25963-7E06-4FCD-B2FA-914878CDC011</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>

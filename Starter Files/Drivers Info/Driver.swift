@@ -47,8 +47,8 @@ let drivers = [
     Driver(id: 5, name: "Pierre Gasly", imageName: "gasly",
            team: redbull, age: 23, number: 10 , birthPlace: "Francia"),
 
-//    Driver(id: 6, name: "Nico Hulkenberg", imageName: "hulkenberg",
-//           team: renault, age: 31, number: 27 , birthPlace: "Alemania"),
+    Driver(id: 6, name: "Nico Hulkenberg", imageName: "hulkenberg",
+           team: renault, age: 31, number: 27 , birthPlace: "Alemania"),
     Driver(id: 7, name: "Daniel Ricciardo", imageName: "ricciardo",
            team: renault, age: 29, number: 3 , birthPlace: "Australia"),
 
